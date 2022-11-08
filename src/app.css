@@ -1,3 +1,43 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html, body {
+    @apply text-black;
+    font-size: 12px;
+}
+
+/* sm */
+@media (min-width: 640px) {
+    html, body {
+        font-size: 14px;
+    }
+}
+
+/* md */
+@media (min-width: 768px) {
+    html, body {
+        font-size: 18px;
+    }
+}
+
+/* lg */
+@media (min-width: 1024px) {
+    html, body {
+        font-size: 22px;
+    }
+}
+
+/* xl */
+@media (min-width: 1280px) {
+    html, body {
+        font-size: 24px;
+    } 
+}
+
+/* 2xl */
+@media (min-width: 1536px) {
+    html, body {
+        font-size: 30px;
+    }
+}
