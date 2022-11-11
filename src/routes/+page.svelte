@@ -4,9 +4,14 @@
 
     import HeroSection from "$lib/components/sections/HeroSection.svelte";
     import AboutSection from "$lib/components/sections/AboutSection.svelte";
+    import PrinciplesSection from "$lib/components/sections/PrinciplesSection.svelte";
+    import FunctionsSection from "$lib/components/sections/FunctionsSection.svelte";
 
 
-    import { activeSectionId } from '../stores'
+    import { activeSectionId } from '../stores';
+
+    export let data;
+
   </script>
   
   <main>
@@ -18,8 +23,12 @@
           <AboutSection />
       </ScrollSection>
       
-      <ScrollSection id="section-3">
-          <h2>Section 3</h2>
+      <ScrollSection id="principlesSection">
+          <PrinciplesSection stuff={data.items} />
+      </ScrollSection>
+
+      <ScrollSection id="functionsSection">
+        <FunctionsSection  />
       </ScrollSection>
   </main>
 
@@ -34,10 +43,23 @@
     {:else if $activeSectionId === "aboutSection"}
     <div class="action p-2 bg-gray text-white fixed text-xl flex flex-col justify-center z-[90]  bottom-0 w-full">  
         <div class="w-full">
-            <a class="text-center block" href="#section-2">Základní principy aplikace 👇</a>
+            <a class="text-center block" href="#principlesSection">Základní principy aplikace 👇</a>
         </div> 
     </div>
 
+    {:else if $activeSectionId === "principlesSection"}
+    <div class="action p-2 bg-yellow text-white fixed text-xl flex flex-col justify-center z-[90]  bottom-0 w-full">  
+        <div class="w-full">
+            <a class="text-center block" href="#functionsSection">Hlavní funkce aplikace 👇</a>
+        </div> 
+    </div>
+
+    {:else if $activeSectionId === "functionsSection"}
+    <div class="action p-2 bg-red text-white fixed text-xl flex flex-col justify-center z-[90]  bottom-0 w-full">  
+        <div class="w-full">
+            <a class="text-center block" href="#section-2">Stáhnout 👇</a>
+        </div> 
+    </div>
 
 
 
