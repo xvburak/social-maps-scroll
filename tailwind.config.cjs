@@ -3,6 +3,9 @@ module.exports = {
   content: ['./src/**/*.{html,js,svelte,ts}'],
   theme: {
     fontSize: {
+      'xs': ['0.8rem', {
+        lineHeight: '1.25rem'
+      }],
       's': ['1rem', {
         lineHeight: '1.45rem'
       }],

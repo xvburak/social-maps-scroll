@@ -18,7 +18,7 @@
             
         </div>
         <div class="text-gray text-s text-left  " class:hidden={isOpen}>
-            <p class="mb-0">{@html item.text.substring(0,250)}...</p>
+            <p class="mb-0">{@html item.text.substring(0,240)}...</p>
         </div>
 
         <div class="text-gray text-s text-left  " class:hidden={!isOpen}>

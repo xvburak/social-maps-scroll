@@ -1,5 +1,5 @@
-<div class=" bg-purple min-h-screen w-full flex space-x-4 p-4">
-    <div class="w-full md:w-1/2 pt-20">
+<div class=" bg-purple min-h-screen w-full flex items-center space-x-4 p-4 pt-20">
+    <div class="w-full md:w-1/2">
         <p>SocialMaps je aplikace, která nabízí kolektivně vytvářené mapy a (re)prezentuje místa, jež oproti jiným
             mapovým službám nejsou hierarchizována, neprochází schvalovacím procesem nadřazené a neznámé autority,
             nejsou nijak algoritmizována, nepodléhají placené reklamě a o veškerých procesech rozhoduje pouze
@@ -15,8 +15,8 @@
     </div>
 </div>
 
-<div class=" bg-purple min-h-screen w-full flex space-x-4 p-4">
-    <div class="w-full md:w-1/2 pt-20">
+<div class=" bg-purple min-h-screen w-full items-center flex space-x-4 p-4">
+    <div class="w-full md:w-1/2">
         <p>Mapy totiž nejsou nikdy nositeli objektivní skutečnosti a nikdy nezaznamenávají mapované území neutrálním
             způsobem. Záleží vždy na tom, kdo a za jakým účelem je vytváří.</p>
         <p>A podle toho taky ovlivňují to, jakým způsobem o mapách smýšlíme, jak je používáme, jaká je jejich podstata,
