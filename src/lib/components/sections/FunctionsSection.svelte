@@ -29,8 +29,8 @@
 
 
 
-<div class="w-full text-m leading-tight h-screen flex items-center pb-16  top-0 bg-yellow  text-white">
-    <div class="pt-20 p-4 text-3xl text-center max-w-screen-xl mx-auto">
+<div class="w-full text-m leading-tight h-screen flex items-center pb-20 top-0 bg-yellow  text-white">
+    <div class="pt-20 p-4 text-center max-w-screen-lg mx-auto">
         <p>Existuje nespočet možností jak konkrétní lokaci a místa v ní mapovat. Proto je důležité do procesu tvorby
             zapojit co nejvíce lidí, s nimiž lze navrhovat nové nástroje a funkce, jež nám mohou pomoci mapovat svět co
             nejpestřejším způsobem.</p>

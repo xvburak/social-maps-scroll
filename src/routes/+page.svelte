@@ -6,7 +6,7 @@
     import AboutSection from "$lib/components/sections/AboutSection.svelte";
     import PrinciplesSection from "$lib/components/sections/PrinciplesSection.svelte";
     import FunctionsSection from "$lib/components/sections/FunctionsSection.svelte";
-
+    import DownloadSection from "$lib/components/sections/DownloadSection.svelte";
 
     import { activeSectionId } from '../stores';
 
@@ -29,6 +29,10 @@
 
       <ScrollSection id="functionsSection">
         <FunctionsSection  />
+      </ScrollSection>
+
+      <ScrollSection id="downloadSection">
+        <DownloadSection  />
       </ScrollSection>
   </main>
 
@@ -57,14 +61,12 @@
     {:else if $activeSectionId === "functionsSection"}
     <div class="action p-2 bg-red text-white fixed text-xl flex flex-col justify-center z-[90]  bottom-0 w-full">  
         <div class="w-full">
-            <a class="text-center block" href="#section-2">Stáhnout 👇</a>
+            <a class="text-center block" href="#downloadSection">Stáhnout 👇</a>
         </div> 
     </div>
 
-
-
     {:else}
-        <ActionBar link="#section-1" copy="back to top" />
+        <!-- <ActionBar link="#section-1" copy="back to top" /> -->
     {/if}
 
 
