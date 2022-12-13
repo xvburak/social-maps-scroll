@@ -1,94 +1,44 @@
-<script>
-    import ScrollSection from "$lib/components/scrollspy/ScrollSection.svelte";
-    import ActionBar from "$lib/components/static/ActionBar.svelte";
+<div class="wrapper">
+    <section class="bg-red red p-8">
+        <div class="">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam autem eveniet asperiores atque pariatur
+                repudiandae accusamus adipisci commodi culpa iure? Totam esse aliquid, error accusantium voluptatum aut
+                veniam inventore voluptates cum accusamus quos maiores nemo laborum delectus minima adipisci a sit
+                commodi illum tempora molestias? Enim, quam alias. Perferendis officiis nostrum, reprehenderit vitae
+                voluptas odit non natus architecto accusantium aliquid temporibus maiores, pariatur obcaecati labore
+                quibusdam fuga cumque cum libero animi eveniet magnam deleniti. Hic quia unde quam dicta consequatur
+                aliquid minima exercitationem dolor, nostrum reprehenderit beatae quas sapiente blanditiis ex labore
+                optio voluptas iure amet, deleniti velit quisquam, repellat praesentium. Expedita sapiente explicabo hic
+                ipsum placeat quo saepe, sunt aut beatae distinctio. Tenetur obcaecati tempore in sed explicabo, sint
+                quos dolorum maiores. Tempore ut necessitatibus facilis vero omnis saepe, expedita laborum consectetur.
+                Omnis magnam esse voluptas? Rerum mollitia asperiores et ipsam a nemo aspernatur excepturi, in facere
+                recusandae corrupti ipsum labore maiores. Suscipit minus reiciendis eligendi dolorem officiis, maiores,
+                corporis nostrum hic aliquam, earum illum omnis! Culpa, nulla! Explicabo quae dicta exercitationem,
+                dolorum repellat neque. Ad dolor id maiores nesciunt ea officiis repellat voluptatem commodi dolore
+                distinctio, fuga sapiente labore, ipsam ut numquam esse quam obcaecati consectetur! Dolore, accusamus!
+            </p>
 
-    import HeroSection from "$lib/components/sections/HeroSection.svelte";
-    import AboutSection from "$lib/components/sections/AboutSection.svelte";
-    import PrinciplesSection from "$lib/components/sections/PrinciplesSection.svelte";
-    import FunctionsSection from "$lib/components/sections/FunctionsSection.svelte";
-    import DownloadSection from "$lib/components/sections/DownloadSection.svelte";
-
-    import { activeSectionId } from '../stores';
-
-    export let data;
-
-  </script>
-  
-  <main>
-      <ScrollSection id="heroSection">
-          <HeroSection />
-      </ScrollSection>
-      
-      <ScrollSection id="aboutSection">
-          <AboutSection />
-      </ScrollSection>
-      
-      <ScrollSection id="principlesSection">
-          <PrinciplesSection stuff={data.items} />
-      </ScrollSection>
-
-      <ScrollSection id="functionsSection">
-        <FunctionsSection  />
-      </ScrollSection>
-
-      <ScrollSection id="downloadSection">
-        <DownloadSection  />
-      </ScrollSection>
-  </main>
-
-    {#if $activeSectionId === "heroSection"}
-    <div class="action p-2 bg-purple text-white fixed text-xl flex flex-col justify-center z-[90]  bottom-0 w-full">  
-        <div class="w-full">
-            <a class="text-center block" href="#aboutSection">O aplikaci 👇</a>
-        </div> 
-    </div>
+        </div>
+    </section>
+    <section class="bg-orange-400">
+        hello
+    </section>
+    <section class="bg-green">
+        hello
+    </section>
+</div>
 
 
-    {:else if $activeSectionId === "aboutSection"}
-    <div class="action p-2 bg-gray text-white fixed text-xl flex flex-col justify-center z-[90]  bottom-0 w-full">  
-        <div class="w-full">
-            <a class="text-center block" href="#principlesSection">Základní principy aplikace 👇</a>
-        </div> 
-    </div>
 
-    {:else if $activeSectionId === "principlesSection"}
-    <div class="action p-2 bg-yellow text-white fixed text-xl flex flex-col justify-center z-[90]  bottom-0 w-full">  
-        <div class="w-full">
-            <a class="text-center block" href="#functionsSection">Hlavní funkce aplikace 👇</a>
-        </div> 
-    </div>
-
-    {:else if $activeSectionId === "functionsSection"}
-    <div class="action p-2 bg-red text-white fixed text-xl flex flex-col justify-center z-[90]  bottom-0 w-full">  
-        <div class="w-full">
-            <a class="text-center block" href="#downloadSection">Stáhnout 👇</a>
-        </div> 
-    </div>
-
-    {:else}
-        <!-- <ActionBar link="#section-1" copy="back to top" /> -->
-    {/if}
-
-
-  <style>
-      :global(html,body) {
-          min-height: 100%;
-          margin: 0;
-          padding: 0;
-          box-sizing: border-box;
-          overflow-x: hidden;
-          scroll-behavior: smooth;
-      }
-      :global(main) {
-          padding-bottom: 200px;
-      }
-/*       
-      aside {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          position: fixed; bottom: 0rem; left: 0rem; z-index: 10;
-          width: 100vw; 
-          height: max-content;
-      } */
-  </style>
+<style>
+    section p {
+        margin-bottom: 2rem;
+        background-color: blanchedalmond;
+    }
+    section {
+        position: sticky;
+        position: -webkit-sticky;
+        top: 0;
+        height: 100vh;
+    }
+</style>
